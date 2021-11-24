@@ -1,0 +1,12 @@
+{
+    "monthly": [
+        [1, 1111, "mortgage"],
+        [4, 88, "internet"],
+        [13, 20, "Netflix"],
+        [18, null, "natural gas"],
+        [19, null, "electricity"],
+        [20, null, "water"],
+        [23, 100, "car insurance"],
+        [28, 50, "cell phone"]
+    ]
+}
