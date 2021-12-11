@@ -85,9 +85,13 @@ def get_bills_in_pay_period(
 
 
 def main():
+    start = date.today()
+    if len(sys.argv) > 1:
+        start = date.fromisoformat(sys.argv[1])
+    pp = PayPeriod(start, 14)
+
     bills = load_bills_from_file("bills.json")
     bills_by_day = get_bills_by_day(bills)
-    pp = PayPeriod(date.today(), 14)
 
     FORMAT = "%a %-d %b"  # Fri 26 Nov
     print(
